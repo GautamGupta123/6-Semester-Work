@@ -1,0 +1,18 @@
+.linking{
+    text-decoration: none;
+    position: relative;
+    left:500px;
+    color:hotpink;
+}
+.linking:link{
+     color:green;
+}
+.linking:visited{
+    color:aqua;
+}
+.linking:hover{
+    color:red;
+}
+.linking:active{
+    color:blue;
+}

@@ -1,0 +1,27 @@
+.container{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 100px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    box-shadow: 2px 2px 10px red;
+}
+.container1{
+    border: 2px solid black;
+    height: 300px;
+    top:-300px;
+    display: flex;
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    position: relative;
+    left:600px;
+    width: 300px;
+    box-shadow: 20px 2px 10px green;
+}
