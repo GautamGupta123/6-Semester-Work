@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validation</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><u>Card Validation</u></h1>
+        <label for="cards" id="lb">Enter Card:</label>
+        <select id="cards1">
+            <option value="Select" name="select">select</option>
+            <option value="mastercard" name="master">mastercard</option>
+            <option value="visa" name="vi">Visa</option>
+            <option value="americanexpress" name="amex">American Express</option>
+        </select>
+        <br>
+        <label  id="second1">Enter Card Number:</label>
+        <input type="text" id="inputing" name="crdnum" placeholder="Enter Card Number">
+        <button class="btn" onclick="check()">Submit</button>
+    </div>
+    <script src="first.js"></script>
+</body>
+</html>
