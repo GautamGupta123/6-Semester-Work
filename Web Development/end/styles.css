@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    background-image: url('acc.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    width:1000px;
+    height: 700px;
+}
