@@ -1,19 +1,20 @@
 <?php
        include "config.php";
-       $iden=$_GET['upid'];
-       $sql="SELECT * FROM `studinfo` WHERE Id=$iden";
+    if(isset($_GET['upid'])){
+       $sql="SELECT * FROM `studinfo` WHERE Id=$_GET[upid]";
        $res=mysqli_query($con,$sql);
        $row=mysqli_fetch_assoc($res);
        $name=$row['SName'];
        $id=$row['Id'];
        $course=$row['Course'];
        $sec=$row['Section'];
-       if(isset($_POST['submit'])){
+    }
+    if(isset($_POST['submit'])){
         $name=$_POST['sname'];
-        $id=$_POST['sid'];
+        $id1=$_POST['sid'];
         $course=$_POST['scourse'];
         $sec=$_POST['ssec'];
-        $sql="UPDATE `studinfo` SET SName='$name',Id=$id,Course='$course',Section='$sec' WHERE Id=$id";
+        $sql="UPDATE `studinfo` SET SName='$name',Id=$id1,Course='$course',Section='$sec' WHERE Id=$id1";
         $res=mysqli_query($con,$sql);
         if($res){
              header('location:app.php');
